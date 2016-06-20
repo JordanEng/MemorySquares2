@@ -61,12 +61,17 @@ public class BoardFilled extends AppCompatActivity {
             button.setWidth(245);
 
             Random rand = new Random();
-            int random = rand.nextInt(35 - gameCount);
-            if (random < gameCount + 5) {
+            int random = rand.nextInt(50 - gameCount);
+            if (random < gameCount + 8) {
                 button.setBackgroundColor(Color.RED);
                 coloredSquares.set(i,1);
             } else {
                 button.setBackgroundColor(Color.WHITE);
+            }
+
+            if(!coloredSquares.contains(1)){
+                button.setBackgroundColor(Color.RED);
+                coloredSquares.set(i,1);
             }
 
             GridLayout.Spec rowspan = GridLayout.spec(currentRow, 1);
