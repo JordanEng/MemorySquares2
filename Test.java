@@ -1,5 +1,8 @@
 package com.example.jordan.memorysquares;
 
+// Test.java
+// Intro Activity. First Screen, displays rules on click.
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

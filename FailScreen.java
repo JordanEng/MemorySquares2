@@ -1,5 +1,10 @@
 package com.example.jordan.memorysquares;
 
+// FailScreen.java
+// If the user clicks an incorrect box in ClickBoard.java, it starts this activity. Text displays
+//    score. On the second button click, values from BoardFilled.java, such as gameCount and time, are reset
+//    Back to the beginning of the game.
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,10 +20,6 @@ public class FailScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fail_screen);
-
-//        for(int i = 0; i < 24; i++){
-//            BoardFilled.coloredSquares.remove(i);
-//        }
     }
 
     public void buttonClick(View view) {

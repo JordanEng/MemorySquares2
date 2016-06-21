@@ -1,5 +1,10 @@
 package com.example.jordan.memorysquares;
 
+// ClickBoard.java
+// Creates empty 4 x 6. If button clicked, checks with BoardFilled ArrayList to see if correct.
+//    If value in ArrayList = 0, turns button white, if ArrayList = 0, turns button red.
+//    If value is wrongly clicked, button turns black.
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -64,8 +69,7 @@ public class ClickBoard extends AppCompatActivity implements View.OnClickListene
                     BoardFilled.coloredSquares.add(button.getId(), 0);
                     button.setOnClickListener(null);
 
-                    if(BoardFilled.coloredSquares.contains(1)){
-                    }else{
+                    if(!BoardFilled.coloredSquares.contains(1)){
                         setTitle("You good");
                         //this part is what doesn't work the second time around
 

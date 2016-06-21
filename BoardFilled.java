@@ -1,6 +1,9 @@
 package com.example.jordan.memorysquares;
 
-import android.content.res.Configuration;
+// BoardFilled.java
+// Activity displays board with randomly colored squares. Creates binary ArrayList to differentiate between
+//     red and white squares. 4 x 6 board, uniform size of buttons.
+
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -72,6 +75,9 @@ public class BoardFilled extends AppCompatActivity {
             if(!coloredSquares.contains(1)){
                 button.setBackgroundColor(Color.RED);
                 coloredSquares.set(i,1);
+            } else if (!coloredSquares.contains(0)){
+                button.setBackgroundColor(Color.WHITE);
+                coloredSquares.set(i,0);
             }
 
             GridLayout.Spec rowspan = GridLayout.spec(currentRow, 1);
